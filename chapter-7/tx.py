@@ -22,9 +22,9 @@ class TxFetcher:
     @classmethod
     def get_url(cls, testnet=False):
         if testnet:
-            return 'https://blockstream.info/testnet/api'
+            return 'https://mempool.space/testnet/api/'
         else:
-            return 'https://blockstream.info/api'
+            return 'https://mempool.space/api/'
 
     @classmethod
     def fetch(cls, tx_id, testnet=False, fresh=False):
